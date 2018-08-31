@@ -1,0 +1,28 @@
+{
+  "name": "@slimio/configmigration",
+  "version": "1.0.0",
+  "description": "SlimIO Configuration Migration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SlimIO/ConfigMigration.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SlimIO/ConfigMigration/issues"
+  },
+  "homepage": "https://github.com/SlimIO/ConfigMigration#readme",
+  "devDependencies": {
+    "@slimio/eslint-config": "^1.1.7",
+    "eslint": "^5.4.0"
+  },
+  "dependencies": {
+    "@sindresorhus/is": "^0.11.0",
+    "fast-json-patch": "^2.0.7"
+  }
+}
