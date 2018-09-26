@@ -27,6 +27,20 @@ class ConfigMigrator {
     }
 
     /**
+     * @method cleanupPath
+     * @param {!String} path path
+     * @returns {String}
+     */
+    static cleanupPath(path) {
+        return path
+            .replace(new RegExp("/", "g"), ".")
+            .slice(1)
+            .split(".")
+            .filter((value) => value !== "properties")
+            .join(".");
+    }
+
+    /**
      * @public
      * @method migrate
      * @memberof ConfigMigrator#
@@ -40,7 +54,11 @@ class ConfigMigrator {
             throw new TypeError("payload should be a plain JavaScript Object!");
         }
 
-        console.log(this.actionsToApply);
+        console.log(this.actionsToApply.map((action) => {
+            action.path = ConfigMigrator.cleanupPath(action.path);
+
+            return action;
+        }));
     }
 
 }
