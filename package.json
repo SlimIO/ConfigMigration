@@ -19,6 +19,14 @@
     "url": "https://github.com/SlimIO/ConfigMigration/issues"
   },
   "homepage": "https://github.com/SlimIO/ConfigMigration#readme",
+  "nyc": {
+    "check-coverage": true,
+    "per-file": false,
+    "lines": 98,
+    "statements": 98,
+    "functions": 98,
+    "branches": 90
+  },
   "husky": {
     "hooks": {
       "pre-push": "npm test",
@@ -32,7 +40,8 @@
     "ava": "^0.25.0",
     "eslint": "^5.9.0",
     "husky": "^1.2.0",
-    "jsdoc": "^3.5.5"
+    "jsdoc": "^3.5.5",
+    "nyc": "^13.1.0"
   },
   "dependencies": {
     "@sindresorhus/is": "^0.11.0",
