@@ -1,4 +1,5 @@
 const ConfigMigrator = require("../index");
+const avaTest = require("ava");
 
 // Original Schema
 const OriginalSchema = {
@@ -24,3 +25,7 @@ const MigrateSchema = {
 
 const Mig = new ConfigMigrator(OriginalSchema, MigrateSchema);
 console.log(Mig.migrate({}));
+
+avaTest("test bypass", (assert) => {
+    assert.pass();
+});
