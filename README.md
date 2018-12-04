@@ -3,7 +3,12 @@
 ![MIT](https://img.shields.io/github/license/mashape/apistatus.svg)
 ![V1.0](https://img.shields.io/badge/version-0.1.0-blue.svg)
 
-SlimIO Configuration Migration
+SlimIO Configuration Migration. This package is used in SlimIO when addon Schema has been updated, so we need to migrate the Configuration Content to not break the startup.
+
+## Features
+- Support both `add` and `remove` action.
+
+> Replace is not supported because it's considered dangerous and a bad practices to update keys!
 
 ## Getting Started
 
