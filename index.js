@@ -7,7 +7,6 @@ const is = require("@slimio/is");
  * @property {Array} actionsToApply
  */
 class ConfigMigrator {
-
     /**
      * @constructor
      * @param {*} originalSchema origin JSON Schema
@@ -60,7 +59,6 @@ class ConfigMigrator {
             return action;
         }));
     }
-
 }
 
 module.exports = ConfigMigrator;
