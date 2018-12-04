@@ -1,6 +1,6 @@
 // Require Third-party Dependencies
 const { compare } = require("fast-json-patch");
-const is = require("@sindresorhus/is");
+const is = require("@slimio/is");
 
 /**
  * @class ConfigMigrator
