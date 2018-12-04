@@ -16,7 +16,50 @@ $ yarn add @slimio/config-migration
 ```
 
 ## Usage example
-> Comming soon!
+```js
+const { strictEqual } = require("assert");
+const ConfigMigrator = require("@slimio/config-migration");
+
+// Original Schema
+const originalSchema = {
+    properties: {
+        hostname: { type: "string" },
+        release: { type: "string" }
+    }
+};
+
+// Migrated Schema (remove >> release, add >> version)
+const migratedSchema = {
+    properties: {
+        hostname: { type: "string" },
+        version: {
+            type: "string",
+            default: "v1.0.0"
+        }
+    }
+}
+
+const cfgMigrator = new ConfigMigrator(originalSchema, migratedSchema);
+const migratedPayload = cfgMigrator.migrate({
+    hostname: "localhost",
+    release: "v1.0.0"
+});
+
+const expected = { hostname: "localhost", version: "v1.0.0" };
+strictEqual(JSON.stringify(migratedPayload), JSON.stringify(expected));
+```
+
+## API
+Schema and payload should be plain JavaScript object.
+```js
+{} || Object.create(null);
+```
+
+### constructor(originalSchema: Object, migrateSchema: Object);
+Create a new Configuration migrator.
+
+### migrate(payload: Object): Object
+Migrate a given payload. The payload will be cloned deep (the original copy shall not be updated).
 
 ## LICENCE
 MIT
