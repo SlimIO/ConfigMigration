@@ -30,7 +30,6 @@ class ConfigMigrator {
             throw new TypeError("migrateSchema should be a plain JavaScript Object!");
         }
 
-        this.originalSchema = originalSchema;
         this.migrateSchema = migrateSchema;
         this.actionsToApply = compare(originalSchema, migrateSchema);
     }
@@ -90,7 +89,6 @@ class ConfigMigrator {
             const schemaPath = ConfigMigrator.toJSKey(path, false);
             const propertyPath = ConfigMigrator.toJSKey(path);
 
-            // console.log(`${op} >> ${schemaPath} => ${propertyPath}`);
             switch (op) {
                 case "add": {
                     const { default: dV = null } = get(this.migrateSchema, schemaPath);

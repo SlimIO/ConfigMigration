@@ -47,8 +47,6 @@ avaTest("test bypass", (assert) => {
         },
         hostname: "yopyopdu98"
     });
-    console.log(migrated);
 
     assert.deepEqual(migrated, { test: {}, release: "hello" });
-    assert.pass();
 });
