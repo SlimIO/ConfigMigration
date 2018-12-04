@@ -1,6 +1,6 @@
 {
-  "name": "@slimio/configmigration",
-  "version": "1.0.0",
+  "name": "@slimio/config-migration",
+  "version": "0.1.0",
   "description": "SlimIO Configuration Migration",
   "main": "index.js",
   "scripts": {
