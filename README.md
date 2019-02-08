@@ -2,6 +2,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/SlimIO/is/commit-activity)
 ![MIT](https://img.shields.io/github/license/mashape/apistatus.svg)
 ![V1.0](https://img.shields.io/badge/version-0.1.0-blue.svg)
+[![Build Status](https://travis-ci.com/SlimIO/ConfigMigration.svg?branch=master)](https://travis-ci.com/SlimIO/ConfigMigration)
 
 SlimIO Configuration Migration. This package is used in SlimIO when addon Schema has been updated, so we need to migrate the Configuration Content to not break the startup.
 
