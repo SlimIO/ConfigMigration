@@ -1,7 +1,9 @@
 # ConfigMigration
+![version](https://img.shields.io/badge/dynamic/json.svg?url=https://raw.githubusercontent.com/SlimIO/ConfigMigration/master/package.json&query=$.version&label=Version)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/SlimIO/is/commit-activity)
 ![MIT](https://img.shields.io/github/license/mashape/apistatus.svg)
-![V1.0](https://img.shields.io/badge/version-0.1.0-blue.svg)
+![size](https://img.shields.io/bundlephobia/min/@slimio/config-migration.svg?style=flat)
+[![Known Vulnerabilities](https://snyk.io/test/github/SlimIO/ConfigMigration/badge.svg?targetFile=package.json)](https://snyk.io/test/github/SlimIO/ConfigMigration?targetFile=package.json)
 [![Build Status](https://travis-ci.com/SlimIO/ConfigMigration.svg?branch=master)](https://travis-ci.com/SlimIO/ConfigMigration)
 
 SlimIO Configuration Migration. This package is used in SlimIO when addon Schema has been updated, so we need to migrate the Configuration Content to not break the startup.
@@ -67,5 +69,5 @@ Create a new Configuration migrator.
 ### migrate(payload: Object): Object
 Migrate a given payload. The payload will be cloned deep (the original copy shall not be updated).
 
-## LICENCE
+## License
 MIT
