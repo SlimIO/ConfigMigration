@@ -4,7 +4,7 @@
 ![MIT](https://img.shields.io/github/license/mashape/apistatus.svg)
 ![size](https://img.shields.io/bundlephobia/min/@slimio/config-migration.svg?style=flat)
 [![Known Vulnerabilities](https://snyk.io/test/github/SlimIO/ConfigMigration/badge.svg?targetFile=package.json)](https://snyk.io/test/github/SlimIO/ConfigMigration?targetFile=package.json)
-[![Build Status](https://travis-ci.com/SlimIO/ConfigMigration.svg?branch=master)](https://travis-ci.com/SlimIO/ConfigMigration)
+[![Build Status](https://travis-ci.com/SlimIO/ConfigMigration.svg?branch=master)](https://travis-ci.com/SlimIO/ConfigMigration) [![Greenkeeper badge](https://badges.greenkeeper.io/SlimIO/ConfigMigration.svg)](https://greenkeeper.io/)
 
 SlimIO Configuration Migration. This package is used in SlimIO when addon Schema has been updated, so we need to migrate the Configuration Content to not break the startup.
 
