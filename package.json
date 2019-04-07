@@ -10,6 +10,9 @@
     "coverage": "nyc ava",
     "report": "nyc report --reporter=html"
   },
+  "engines": {
+      "node": ">=10"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SlimIO/ConfigMigration.git"
@@ -20,7 +23,7 @@
     "migration",
     "json"
   ],
-  "author": "",
+  "author": "SlimIO",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/SlimIO/ConfigMigration/issues"
