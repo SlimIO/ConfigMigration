@@ -15,10 +15,10 @@
     "url": "git+https://github.com/SlimIO/ConfigMigration.git"
   },
   "keywords": [
-      "SlimIO",
-      "config",
-      "migration",
-      "json"
+    "SlimIO",
+    "config",
+    "migration",
+    "json"
   ],
   "author": "",
   "license": "MIT",
