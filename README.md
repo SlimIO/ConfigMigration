@@ -8,6 +8,9 @@
 
 SlimIO Configuration Migration. This package is used in SlimIO when addon Schema has been updated, so we need to migrate the Configuration Content to not break the startup.
 
+## Requirements
+- Node.js v10 or higher
+
 ## Features
 - Support both `add` and `remove` action.
 
