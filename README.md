@@ -3,6 +3,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/SlimIO/is/commit-activity)
 ![MIT](https://img.shields.io/github/license/mashape/apistatus.svg)
 ![size](https://img.shields.io/bundlephobia/min/@slimio/config-migration.svg?style=flat)
+![dep](https://img.shields.io/david/SlimIO/ConfigMigration.svg)
 [![Known Vulnerabilities](https://snyk.io/test/github/SlimIO/ConfigMigration/badge.svg?targetFile=package.json)](https://snyk.io/test/github/SlimIO/ConfigMigration?targetFile=package.json)
 [![Build Status](https://travis-ci.com/SlimIO/ConfigMigration.svg?branch=master)](https://travis-ci.com/SlimIO/ConfigMigration) [![Greenkeeper badge](https://badges.greenkeeper.io/SlimIO/ConfigMigration.svg)](https://greenkeeper.io/)
 
