@@ -72,5 +72,15 @@ Create a new Configuration migrator.
 ### migrate(payload: Object): Object
 Migrate a given payload. The payload will be cloned deep (the original copy shall not be updated).
 
+## Dependencies
+
+|Name|Refactoring|Security Risk|Usage|
+|---|---|---|---|
+|[@slimio/is](https://github.com/SlimIO/is#readme)|Minor|Low|Type checker|
+|[fast-json-patch](https://github.com/Starcounter-Jack/JSON-Patch)|⚠️Major|High|Interact with JSON file|
+|[lodash.clonedeep](https://lodash.com/)|Minor|Low|Clone deep Objects|
+|[lodash.get](https://lodash.com/)|Minor|Low|Get a value|
+|[lodash.set](https://lodash.com/)|Minor|Low|Set a value|
+
 ## License
 MIT

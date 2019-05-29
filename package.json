@@ -11,7 +11,7 @@
     "report": "nyc report --reporter=html"
   },
   "engines": {
-      "node": ">=10"
+    "node": ">=10"
   },
   "repository": {
     "type": "git",
