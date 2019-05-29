@@ -80,8 +80,8 @@ Migrate a given payload. The payload will be cloned deep (the original copy shal
 |[@slimio/is](https://github.com/SlimIO/is#readme)|Minor|Low|Type checker|
 |[fast-json-patch](https://github.com/Starcounter-Jack/JSON-Patch)|⚠️Major|High|Interact with JSON file|
 |[lodash.clonedeep](https://lodash.com/)|Minor|Low|Clone deep Objects|
-|[lodash.get](https://lodash.com/)|Minor|Low|Get a value|
-|[lodash.set](https://lodash.com/)|Minor|Low|Set a value|
+|[lodash.get](https://lodash.com/)|Minor|Low|Get deep a value|
+|[lodash.set](https://lodash.com/)|Minor|Low|Set deep a value|
 
 ## License
 MIT
