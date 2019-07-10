@@ -57,7 +57,7 @@
     "pkg-ok": "^2.3.1"
   },
   "dependencies": {
-    "@slimio/is": "^1.4.0",
+    "@slimio/is": "^1.5.1",
     "fast-json-patch": "^2.0.7",
     "lodash.clonedeep": "^4.5.0",
     "lodash.get": "^4.4.2",
