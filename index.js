@@ -1,3 +1,5 @@
+"use strict";
+
 // Require Third-party Dependencies
 const { compare } = require("fast-json-patch");
 const is = require("@slimio/is");
@@ -9,13 +11,9 @@ const cloneDeep = require("lodash.clonedeep");
 const SKIP_KEYWORDS = ["additionalProperties"];
 const SCHEMA_KEYWORDS = new Set(["properties"]);
 
-/**
- * @class ConfigMigrator
- * @property {Array} actionsToApply
- */
 class ConfigMigrator {
     /**
-     * @constructor
+     * @class ConfigMigrator
      * @memberof ConfigMigrator#
      * @param {*} originalSchema origin JSON Schema
      * @param {*} migrateSchema schema to migrate
@@ -36,12 +34,12 @@ class ConfigMigrator {
 
     /**
      * @static
-     * @method cleanJSONSchemaKeys
+     * @function cleanJSONSchemaKeys
      * @memberof ConfigMigrator#
-     * @desc Remove JSON Schema properties keys
-     * @param {!String} value value
-     * @param {!Number} index value index
-     * @returns {String}
+     * @description Remove JSON Schema properties keys
+     * @param {!string} value value
+     * @param {!number} index value index
+     * @returns {string}
      */
     static cleanJSONSchemaKeys(value, index) {
         if (!(index % 2) && SCHEMA_KEYWORDS.has(value)) {
@@ -52,12 +50,12 @@ class ConfigMigrator {
     }
 
     /**
-     * @method toJSKey
+     * @function toJSKey
      * @memberof ConfigMigrator#
-     * @desc Filter JSON Diff keys
-     * @param {!String} path path
-     * @param {Boolean} [filter=true] filter
-     * @returns {String}
+     * @description Filter JSON Diff keys
+     * @param {!string} path path
+     * @param {boolean} [filter=true] filter
+     * @returns {string}
      */
     static toJSKey(path, filter = true) {
         const arr = path.split(/\//g).slice(1);
@@ -67,10 +65,10 @@ class ConfigMigrator {
 
     /**
      * @public
-     * @method migrate
+     * @function migrate
      * @memberof ConfigMigrator#
      * @param {*} payload JavaScript Object payload to migrate
-     * @return {*}
+     * @returns {*}
      *
      * @throws {TypeError}
      */
