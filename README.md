@@ -6,7 +6,6 @@
 ![dep](https://img.shields.io/david/SlimIO/ConfigMigration.svg)
 [![Known Vulnerabilities](https://snyk.io/test/github/SlimIO/ConfigMigration/badge.svg?targetFile=package.json)](https://snyk.io/test/github/SlimIO/ConfigMigration?targetFile=package.json)
 [![Build Status](https://travis-ci.com/SlimIO/ConfigMigration.svg?branch=master)](https://travis-ci.com/SlimIO/ConfigMigration)
-[![Greenkeeper badge](https://badges.greenkeeper.io/SlimIO/ConfigMigration.svg)](https://greenkeeper.io/)
 
 SlimIO Configuration Migration. This package is used in SlimIO when addon Schema has been updated, so we need to migrate the Configuration Content to not break the startup.
 
