@@ -8,7 +8,9 @@
     "test": "cross-env psp && nyc --reporter=lcov ava --verbose",
     "doc": "jsdoc -c ./jsdoc.json -r -R ./README.md -P ./package.json --verbose",
     "coverage": "codecov",
-    "report": "nyc report --reporter=html"
+    "report": "nyc report --reporter=html",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "engines": {
     "node": ">=12"
@@ -67,6 +69,8 @@
     "fast-json-patch": "^3.0.0-1",
     "lodash.clonedeep": "^4.5.0",
     "lodash.get": "^4.4.2",
-    "lodash.set": "^4.3.2"
-  }
+    "lodash.set": "^4.3.2",
+    "snyk": "^1.342.2"
+  },
+  "snyk": true
 }
